@@ -4,11 +4,17 @@ var destinations = [
   'Agata and Valentina',
   'Cava',
   'Chipotle',
+  'Dig Inn',
   'Dorado',
   'Dos Toros',
   'Make Sandwich',
+  'Maoz',
   'Num Pang',
-  'Taboonette'
+  'Potbelly',
+  'Roast',
+  'Taboonette',
+  'Whole Foods',
+  'Wok to Walk'
 ];
 
 var sentences = [
