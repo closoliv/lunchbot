@@ -7,6 +7,7 @@ var destinations = [
   'Dig Inn',
   'Dorado',
   'Dos Toros',
+  'Flats Fix',
   'Make Sandwich',
   'Maoz',
   'Num Pang',
