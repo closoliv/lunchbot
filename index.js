@@ -18,12 +18,22 @@ var sentences = [
   '%s is always a good choice'
 ];
 
+function makeDestinationSentence() {
+  var destination = randVal(destinations);
+  var sentence = randVal(sentences);
+  return sentence.replace('%s', destination);
+}
+
+function randVal(arr) {
+  var len = arr.length;
+  var randPointer = Math.floor(Math.random() * len);
+  return arr[randPointer];
+}
+
 exports.handler = function(event, context, callback) {
   var handlers = {
     GetLunchDestination: function() {
-      var destination = randVal(destinations);
-      var sentence = randVal(sentences);
-      var response = sentence.replace('%s', destination);
+      var response = makeDestinationSentence();
       this.emit(':tell', response);
     },
     Unhandled: function() {
@@ -34,11 +44,3 @@ exports.handler = function(event, context, callback) {
   alexa.registerHandlers(handlers);
   alexa.execute();
 };
-
-function randVal(arr) {
-  var len = arr.length;
-  var randPointer = Math.floor(Math.random() * len);
-  return arr[randPointer];
-}
-
-
