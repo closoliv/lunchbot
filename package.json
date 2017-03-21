@@ -1,0 +1,14 @@
+{
+  "name": "lunchbot",
+  "description": "Alexa Skill for finding lunch spots near the Big Human office",
+  "authors": "jshakes",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "clay-alexa-sdk": "*"
+  },
+  "scripts": {
+    "start": "node index"
+  }
+}

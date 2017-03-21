@@ -1,0 +1,7 @@
+{
+  "accountName": "public",
+  "serviceName": "lunchbot",
+  "serviceDescription": "Where to get lunch near the Big Human office",
+  "inputs": [],
+  "serviceDisplayName": "lunchbot"
+}
